@@ -1,0 +1,19 @@
+<!-- <p>navbar works!</p> -->
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-button class="example-icon" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <div class="spacer"></div>
+        <img src="../../../assets/images/logos/carmelita-modified.png" class="mt-2" width="120" height="100"
+                    alt="Logo Carmelita">
+        <div class="spacer"></div>
+        <button mat-button>
+            <a href="https://rompopecarmelita.com" target="_blank"> <img src="../../../assets/images/logos/carmelita.png" width="50" height="50"
+                    alt="Logo Carmelita"> </a>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="['/']">Inicio</button>
+</mat-menu>

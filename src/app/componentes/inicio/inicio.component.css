@@ -1,0 +1,33 @@
+.background{
+  background-color: #000000;
+}
+
+.text-typing {
+    padding:30px 30px;
+    background:transparent;
+    font-size:35px;
+    font-family:monospace;
+    border-radius:50px;
+    color: white;
+    
+  }
+  .text-typing p {
+    margin:0px;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing 4s steps(22,end) forwards,
+              blink 1s infinite;
+  }
+  
+  @keyframes typing {
+    0% { width:0%; height: 50px; }
+    100% { width:100%; height: 50px;}
+  }
+  @keyframes blink {
+    0%,100% {
+      border-right:2px solid transparent;
+    }
+    50% {
+      border-right:2px solid linear-gradient(90deg, #616d71,#393d42)
+    }
+  }
